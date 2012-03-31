@@ -1,0 +1,10 @@
+digraph G {
+  bgcolor=transparent;
+  compound=true
+  node [ fontsize="10", fontname="FreeSans"];
+  edge [ labelfontsize="10", labelfontname="FreeSans"];
+  subgraph clusterdir_4f22f3fd3d3cce94a331ff7cdf0bf085 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="temu-1.0" fontname="FreeSans", fontsize="10", URL="dir_4f22f3fd3d3cce94a331ff7cdf0bf085.html"]
+  dir_f4d29d0fa38ea8a3023cadd2b0dcf628 [shape=box, label="docs", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_f4d29d0fa38ea8a3023cadd2b0dcf628.html"];
+  }
+}

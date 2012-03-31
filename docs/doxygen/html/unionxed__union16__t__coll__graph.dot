@@ -1,0 +1,20 @@
+digraph G
+{
+  bgcolor="transparent";
+  edge [fontname="FreeSans",fontsize="10",labelfontname="FreeSans",labelfontsize="10"];
+  node [fontname="FreeSans",fontsize="10",shape=record];
+  rankdir=LR;
+  Node1 [label="xed_union16_t",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node2 -> Node1 [dir=back,color="darkorchid3",fontsize="10",style="dashed",label="u16",fontname="FreeSans"];
+  Node2 [label="xed_uint16_t",height=0.2,width=0.4,color="grey75"];
+  Node3 -> Node1 [dir=back,color="darkorchid3",fontsize="10",style="dashed",label="b",fontname="FreeSans"];
+  Node3 [label="struct xed_union16_t::@7",height=0.2,width=0.4,color="grey75"];
+  Node4 -> Node1 [dir=back,color="darkorchid3",fontsize="10",style="dashed",label="b",fontname="FreeSans"];
+  Node4 [label="struct xed_union16_t::@20",height=0.2,width=0.4,color="grey75"];
+  Node5 -> Node1 [dir=back,color="darkorchid3",fontsize="10",style="dashed",label="b0\nb1\nbyte",fontname="FreeSans"];
+  Node5 [label="xed_uint8_t",height=0.2,width=0.4,color="grey75"];
+  Node6 -> Node1 [dir=back,color="darkorchid3",fontsize="10",style="dashed",label="i16",fontname="FreeSans"];
+  Node6 [label="xed_int16_t",height=0.2,width=0.4,color="grey75"];
+  Node7 -> Node1 [dir=back,color="darkorchid3",fontsize="10",style="dashed",label="s_byte",fontname="FreeSans"];
+  Node7 [label="xed_int8_t",height=0.2,width=0.4,color="grey75"];
+}

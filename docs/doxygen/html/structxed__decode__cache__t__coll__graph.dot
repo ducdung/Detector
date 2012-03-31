@@ -1,0 +1,36 @@
+digraph G
+{
+  bgcolor="transparent";
+  edge [fontname="FreeSans",fontsize="10",labelfontname="FreeSans",labelfontsize="10"];
+  node [fontname="FreeSans",fontsize="10",shape=record];
+  rankdir=LR;
+  Node1 [label="xed_decode_cache_t",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node2 -> Node1 [dir=back,color="darkorchid3",fontsize="10",style="dashed",label="limit",fontname="FreeSans"];
+  Node2 [label="xed_uint32_t",height=0.2,width=0.4,color="grey75"];
+  Node3 -> Node1 [dir=back,color="darkorchid3",fontsize="10",style="dashed",label="entries",fontname="FreeSans"];
+  Node3 [label="xed_decode_cache_entry_t",height=0.2,width=0.4,color="black",URL="$structxed__decode__cache__entry__t.html"];
+  Node4 -> Node3 [dir=back,color="darkorchid3",fontsize="10",style="dashed",label="d",fontname="FreeSans"];
+  Node4 [label="xed_decoded_inst_s",height=0.2,width=0.4,color="black",URL="$structxed__decoded__inst__s.html"];
+  Node5 -> Node4 [dir=back,color="darkorchid3",fontsize="10",style="dashed",label="_operands",fontname="FreeSans"];
+  Node5 [label="xed_uint16_t",height=0.2,width=0.4,color="grey75"];
+  Node6 -> Node4 [dir=back,color="darkorchid3",fontsize="10",style="dashed",label="_byte_array",fontname="FreeSans"];
+  Node6 [label="union xed_decoded_inst_s::@0",height=0.2,width=0.4,color="grey75"];
+  Node7 -> Node4 [dir=back,color="darkorchid3",fontsize="10",style="dashed",label="u",fontname="FreeSans"];
+  Node7 [label="union xed_decoded_inst_s::@1",height=0.2,width=0.4,color="grey75"];
+  Node8 -> Node4 [dir=back,color="darkorchid3",fontsize="10",style="dashed",label="_byte_array",fontname="FreeSans"];
+  Node8 [label="union xed_decoded_inst_s::@13",height=0.2,width=0.4,color="grey75"];
+  Node9 -> Node4 [dir=back,color="darkorchid3",fontsize="10",style="dashed",label="u",fontname="FreeSans"];
+  Node9 [label="union xed_decoded_inst_s::@14",height=0.2,width=0.4,color="grey75"];
+  Node10 -> Node4 [dir=back,color="darkorchid3",fontsize="10",style="dashed",label="dv",fontname="FreeSans"];
+  Node10 [label="struct xed_decoder_vars_s *",height=0.2,width=0.4,color="grey75"];
+  Node11 -> Node4 [dir=back,color="darkorchid3",fontsize="10",style="dashed",label="_inst",fontname="FreeSans"];
+  Node11 [label="const xed_inst_t *",height=0.2,width=0.4,color="grey75"];
+  Node12 -> Node4 [dir=back,color="darkorchid3",fontsize="10",style="dashed",label="_operand_order\n_dec\n_n_operand_order\n_decoded_length\n_enc",fontname="FreeSans"];
+  Node12 [label="xed_uint8_t",height=0.2,width=0.4,color="grey75"];
+  Node13 -> Node4 [dir=back,color="darkorchid3",fontsize="10",style="dashed",label="user_data",fontname="FreeSans"];
+  Node13 [label="xed_uint64_t",height=0.2,width=0.4,color="grey75"];
+  Node14 -> Node4 [dir=back,color="darkorchid3",fontsize="10",style="dashed",label="ev",fontname="FreeSans"];
+  Node14 [label="struct xed_encoder_vars_s *",height=0.2,width=0.4,color="grey75"];
+  Node12 -> Node3 [dir=back,color="darkorchid3",fontsize="10",style="dashed",label="array\nlength",fontname="FreeSans"];
+  Node13 -> Node1 [dir=back,color="darkorchid3",fontsize="10",style="dashed",label="hits\nmisses\nfound_something\nmiscompares",fontname="FreeSans"];
+}

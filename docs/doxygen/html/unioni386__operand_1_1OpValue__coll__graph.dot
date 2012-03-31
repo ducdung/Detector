@@ -1,0 +1,29 @@
+digraph G
+{
+  bgcolor="transparent";
+  edge [fontname="FreeSans",fontsize="10",labelfontname="FreeSans",labelfontsize="10"];
+  node [fontname="FreeSans",fontsize="10",shape=record];
+  Node1 [label="i386_operand::i386_operand::OpValue",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node2 -> Node1 [dir=back,color="darkorchid3",fontsize="10",style="dashed",label="freg",fontname="FreeSans"];
+  Node2 [label="_float_register",height=0.2,width=0.4,color="black",URL="$struct__float__register.html"];
+  Node3 -> Node2 [dir=back,color="darkorchid3",fontsize="10",style="dashed",label="num\ndef",fontname="FreeSans"];
+  Node3 [label="char",height=0.2,width=0.4,color="grey75"];
+  Node4 -> Node1 [dir=back,color="darkorchid3",fontsize="10",style="dashed",label="jmp",fontname="FreeSans"];
+  Node4 [label="_jump",height=0.2,width=0.4,color="black",URL="$struct__jump.html"];
+  Node3 -> Node4 [dir=back,color="darkorchid3",fontsize="10",style="dashed",label="type\nrelative",fontname="FreeSans"];
+  Node5 -> Node4 [dir=back,color="darkorchid3",fontsize="10",style="dashed",label="target",fontname="FreeSans"];
+  Node5 [label="bfd_vma",height=0.2,width=0.4,color="grey75"];
+  Node6 -> Node4 [dir=back,color="darkorchid3",fontsize="10",style="dashed",label="offset",fontname="FreeSans"];
+  Node6 [label="long",height=0.2,width=0.4,color="grey75"];
+  Node7 -> Node1 [dir=back,color="darkorchid3",fontsize="10",style="dashed",label="mem",fontname="FreeSans"];
+  Node7 [label="_mem_loc",height=0.2,width=0.4,color="black",URL="$struct__mem__loc.html"];
+  Node3 -> Node7 [dir=back,color="darkorchid3",fontsize="10",style="dashed",label="base\ndispl_t\nscale\nsegment\nindex",fontname="FreeSans"];
+  Node6 -> Node7 [dir=back,color="darkorchid3",fontsize="10",style="dashed",label="displ",fontname="FreeSans"];
+  Node8 -> Node1 [dir=back,color="darkorchid3",fontsize="10",style="dashed",label="imm",fontname="FreeSans"];
+  Node8 [label="_immediate",height=0.2,width=0.4,color="black",URL="$struct__immediate.html"];
+  Node3 -> Node8 [dir=back,color="darkorchid3",fontsize="10",style="dashed",label="type",fontname="FreeSans"];
+  Node6 -> Node8 [dir=back,color="darkorchid3",fontsize="10",style="dashed",label="segment\nvalue",fontname="FreeSans"];
+  Node9 -> Node1 [dir=back,color="darkorchid3",fontsize="10",style="dashed",label="reg",fontname="FreeSans"];
+  Node9 [label="_register",height=0.2,width=0.4,color="black",URL="$struct__register.html"];
+  Node3 -> Node9 [dir=back,color="darkorchid3",fontsize="10",style="dashed",label="num",fontname="FreeSans"];
+}

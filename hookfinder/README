@@ -1,0 +1,25 @@
+How to build it?
+in the parent directory:
+1. run ./configure --target-list=i386-softmmu --cc=gcc-3.4 --enable-taint
+2. make dyngen
+3. cd hookfinder
+4. make
+
+
+How to use it?
+
+1. run ./temu -kernel-kqemu -m 512 -monitor stdio -snapshot -net none
+<windows-xp-image>
+
+2. after windows starts up, run the following commands in the qemu console
+  taint_start
+  check_module <sample_name>
+  start_trace <trace-file-name>
+
+3. run the sample, and wait for a few minutes
+
+4. check hook.log for the detected hooks. There will be one depend_id for each
+hook
+
+5. run utils/propgraph.sh <trace-file-name> <depend_id> output.dot
+it will generate a hook graph 

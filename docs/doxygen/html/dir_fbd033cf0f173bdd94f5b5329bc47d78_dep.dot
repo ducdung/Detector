@@ -1,0 +1,15 @@
+digraph G {
+  bgcolor=transparent;
+  compound=true
+  node [ fontsize="10", fontname="FreeSans"];
+  edge [ labelfontsize="10", labelfontname="FreeSans"];
+  subgraph clusterdir_3b6767f6be6ef802b0654406f3e74d86 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="shared" fontname="FreeSans", fontsize="10", URL="dir_3b6767f6be6ef802b0654406f3e74d86.html"]
+  subgraph clusterdir_fbd033cf0f173bdd94f5b5329bc47d78 {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_fbd033cf0f173bdd94f5b5329bc47d78.html"];
+    dir_fbd033cf0f173bdd94f5b5329bc47d78 [shape=plaintext label="kernelinfo"];
+    dir_c5944259098c77de0f28d328bbbc4734 [shape=box label="procinfo-ubuntu-hardy" color="black" fillcolor="white" style="filled" URL="dir_c5944259098c77de0f28d328bbbc4734.html"];
+    dir_d7b70b599f8054119132a4a36430c34c [shape=box label="procinfo73" color="black" fillcolor="white" style="filled" URL="dir_d7b70b599f8054119132a4a36430c34c.html"];
+  }
+  }
+}

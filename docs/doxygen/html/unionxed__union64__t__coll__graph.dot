@@ -1,0 +1,36 @@
+digraph G
+{
+  bgcolor="transparent";
+  edge [fontname="FreeSans",fontsize="10",labelfontname="FreeSans",labelfontsize="10"];
+  node [fontname="FreeSans",fontsize="10",shape=record];
+  rankdir=LR;
+  Node1 [label="xed_union64_t",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node2 -> Node1 [dir=back,color="darkorchid3",fontsize="10",style="dashed",label="w",fontname="FreeSans"];
+  Node2 [label="struct xed_union64_t::@24",height=0.2,width=0.4,color="grey75"];
+  Node3 -> Node1 [dir=back,color="darkorchid3",fontsize="10",style="dashed",label="s",fontname="FreeSans"];
+  Node3 [label="struct xed_union64_t::@25",height=0.2,width=0.4,color="grey75"];
+  Node4 -> Node1 [dir=back,color="darkorchid3",fontsize="10",style="dashed",label="w3\nword\nw0\nw1\nw2",fontname="FreeSans"];
+  Node4 [label="xed_uint16_t",height=0.2,width=0.4,color="grey75"];
+  Node5 -> Node1 [dir=back,color="darkorchid3",fontsize="10",style="dashed",label="hi32\nlo32\ndword",fontname="FreeSans"];
+  Node5 [label="xed_uint32_t",height=0.2,width=0.4,color="grey75"];
+  Node6 -> Node1 [dir=back,color="darkorchid3",fontsize="10",style="dashed",label="b",fontname="FreeSans"];
+  Node6 [label="struct xed_union64_t::@10",height=0.2,width=0.4,color="grey75"];
+  Node7 -> Node1 [dir=back,color="darkorchid3",fontsize="10",style="dashed",label="s_dword",fontname="FreeSans"];
+  Node7 [label="xed_int32_t",height=0.2,width=0.4,color="grey75"];
+  Node8 -> Node1 [dir=back,color="darkorchid3",fontsize="10",style="dashed",label="i64",fontname="FreeSans"];
+  Node8 [label="xed_int64_t",height=0.2,width=0.4,color="grey75"];
+  Node9 -> Node1 [dir=back,color="darkorchid3",fontsize="10",style="dashed",label="w",fontname="FreeSans"];
+  Node9 [label="struct xed_union64_t::@11",height=0.2,width=0.4,color="grey75"];
+  Node10 -> Node1 [dir=back,color="darkorchid3",fontsize="10",style="dashed",label="b0\nb1\nb2\nb3\nb4\nb5\nb6\nb7\nbyte",fontname="FreeSans"];
+  Node10 [label="xed_uint8_t",height=0.2,width=0.4,color="grey75"];
+  Node11 -> Node1 [dir=back,color="darkorchid3",fontsize="10",style="dashed",label="u64",fontname="FreeSans"];
+  Node11 [label="xed_uint64_t",height=0.2,width=0.4,color="grey75"];
+  Node12 -> Node1 [dir=back,color="darkorchid3",fontsize="10",style="dashed",label="s",fontname="FreeSans"];
+  Node12 [label="struct xed_union64_t::@12",height=0.2,width=0.4,color="grey75"];
+  Node13 -> Node1 [dir=back,color="darkorchid3",fontsize="10",style="dashed",label="s_word",fontname="FreeSans"];
+  Node13 [label="xed_int16_t",height=0.2,width=0.4,color="grey75"];
+  Node14 -> Node1 [dir=back,color="darkorchid3",fontsize="10",style="dashed",label="s_byte",fontname="FreeSans"];
+  Node14 [label="xed_int8_t",height=0.2,width=0.4,color="grey75"];
+  Node15 -> Node1 [dir=back,color="darkorchid3",fontsize="10",style="dashed",label="b",fontname="FreeSans"];
+  Node15 [label="struct xed_union64_t::@23",height=0.2,width=0.4,color="grey75"];
+}

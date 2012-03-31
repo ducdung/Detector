@@ -1,0 +1,25 @@
+digraph G
+{
+  bgcolor="transparent";
+  edge [fontname="FreeSans",fontsize="10",labelfontname="FreeSans",labelfontsize="10"];
+  node [fontname="FreeSans",fontsize="10",shape=record];
+  Node1 [label="_basic_block",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node2 -> Node1 [dir=back,color="darkorchid3",fontsize="10",style="dashed",label="cf_down\ncf_up\nconflicts",fontname="FreeSans"];
+  Node2 [label="_queue",height=0.2,width=0.4,color="black",URL="$struct__queue.html"];
+  Node3 -> Node2 [dir=back,color="darkorchid3",fontsize="10",style="dashed",label="last\nfirst",fontname="FreeSans"];
+  Node3 [label="_element",height=0.2,width=0.4,color="black",URL="$struct__element.html"];
+  Node3 -> Node3 [dir=back,color="darkorchid3",fontsize="10",style="dashed",label="next\nlist_next",fontname="FreeSans"];
+  Node4 -> Node3 [dir=back,color="darkorchid3",fontsize="10",style="dashed",label="addr",fontname="FreeSans"];
+  Node4 [label="bfd_vma",height=0.2,width=0.4,color="grey75"];
+  Node5 -> Node3 [dir=back,color="darkorchid3",fontsize="10",style="dashed",label="data",fontname="FreeSans"];
+  Node5 [label="void *",height=0.2,width=0.4,color="grey75"];
+  Node1 -> Node1 [dir=back,color="darkorchid3",fontsize="10",style="dashed",label="next",fontname="FreeSans"];
+  Node6 -> Node1 [dir=back,color="darkorchid3",fontsize="10",style="dashed",label="valid\nvisited\nphony\nmark",fontname="FreeSans"];
+  Node6 [label="char",height=0.2,width=0.4,color="grey75"];
+  Node7 -> Node1 [dir=back,color="darkorchid3",fontsize="10",style="dashed",label="type\nin_degree",fontname="FreeSans"];
+  Node7 [label="int",height=0.2,width=0.4,color="grey75"];
+  Node4 -> Node1 [dir=back,color="darkorchid3",fontsize="10",style="dashed",label="start_addr\nend_addr",fontname="FreeSans"];
+  Node8 -> Node1 [dir=back,color="darkorchid3",fontsize="10",style="dashed",label="instructions",fontname="FreeSans"];
+  Node8 [label="_hash_table",height=0.2,width=0.4,color="black",URL="$struct__hash__table.html"];
+  Node3 -> Node8 [dir=back,color="darkorchid3",fontsize="10",style="dashed",label="head\ntable",fontname="FreeSans"];
+}

@@ -1,0 +1,28 @@
+digraph G
+{
+  bgcolor="transparent";
+  edge [fontname="FreeSans",fontsize="10",labelfontname="FreeSans",labelfontsize="10"];
+  node [fontname="FreeSans",fontsize="10",shape=record];
+  rankdir=LR;
+  Node1 [label="xed_decoded_inst_s",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node2 -> Node1 [dir=back,color="darkorchid3",fontsize="10",style="dashed",label="_operands",fontname="FreeSans"];
+  Node2 [label="xed_uint16_t",height=0.2,width=0.4,color="grey75"];
+  Node3 -> Node1 [dir=back,color="darkorchid3",fontsize="10",style="dashed",label="_byte_array",fontname="FreeSans"];
+  Node3 [label="union xed_decoded_inst_s::@0",height=0.2,width=0.4,color="grey75"];
+  Node4 -> Node1 [dir=back,color="darkorchid3",fontsize="10",style="dashed",label="u",fontname="FreeSans"];
+  Node4 [label="union xed_decoded_inst_s::@1",height=0.2,width=0.4,color="grey75"];
+  Node5 -> Node1 [dir=back,color="darkorchid3",fontsize="10",style="dashed",label="_byte_array",fontname="FreeSans"];
+  Node5 [label="union xed_decoded_inst_s::@13",height=0.2,width=0.4,color="grey75"];
+  Node6 -> Node1 [dir=back,color="darkorchid3",fontsize="10",style="dashed",label="u",fontname="FreeSans"];
+  Node6 [label="union xed_decoded_inst_s::@14",height=0.2,width=0.4,color="grey75"];
+  Node7 -> Node1 [dir=back,color="darkorchid3",fontsize="10",style="dashed",label="dv",fontname="FreeSans"];
+  Node7 [label="struct xed_decoder_vars_s *",height=0.2,width=0.4,color="grey75"];
+  Node8 -> Node1 [dir=back,color="darkorchid3",fontsize="10",style="dashed",label="_inst",fontname="FreeSans"];
+  Node8 [label="const xed_inst_t *",height=0.2,width=0.4,color="grey75"];
+  Node9 -> Node1 [dir=back,color="darkorchid3",fontsize="10",style="dashed",label="_operand_order\n_dec\n_n_operand_order\n_decoded_length\n_enc",fontname="FreeSans"];
+  Node9 [label="xed_uint8_t",height=0.2,width=0.4,color="grey75"];
+  Node10 -> Node1 [dir=back,color="darkorchid3",fontsize="10",style="dashed",label="user_data",fontname="FreeSans"];
+  Node10 [label="xed_uint64_t",height=0.2,width=0.4,color="grey75"];
+  Node11 -> Node1 [dir=back,color="darkorchid3",fontsize="10",style="dashed",label="ev",fontname="FreeSans"];
+  Node11 [label="struct xed_encoder_vars_s *",height=0.2,width=0.4,color="grey75"];
+}
